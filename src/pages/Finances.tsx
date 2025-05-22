@@ -26,7 +26,7 @@ const Finances: React.FC = () => {
   useEffect(() => {
     localStorage.setItem('transactions', JSON.stringify(transactions));
     
-    // Calculate balance
+    // calculo balanço
     const newBalance = transactions.reduce((total, transaction) => {
       return transaction.type === 'receita' 
         ? total + transaction.amount 
@@ -82,7 +82,7 @@ const Finances: React.FC = () => {
       <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200">Gerenciador Financeiro</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-        {/* Current Balance */}
+        {/* saldo atual */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6">
           <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">Saldo Atual</h3>
           <div className={`text-3xl font-bold mb-2 ${
@@ -101,7 +101,7 @@ const Finances: React.FC = () => {
           </div>
         </div>
         
-        {/* New Transaction Form */}
+        {/* Formulario de nova transição*/}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6">
           <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">Nova Transação</h3>
           
@@ -157,7 +157,7 @@ const Finances: React.FC = () => {
           </div>
         </div>
         
-        {/* Summary */}
+        {/* rwsumo */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6">
           <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">Resumo</h3>
           
@@ -209,7 +209,7 @@ const Finances: React.FC = () => {
         </div>
       </div>
       
-      {/* Recent Transactions */}
+      {/* Recente Transação */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6">
         <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">Transações Recentes</h3>
         

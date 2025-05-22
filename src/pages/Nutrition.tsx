@@ -31,11 +31,11 @@ const Nutrition: React.FC = () => {
 
   const saveMeals = () => {
     localStorage.setItem('meals', JSON.stringify(meals));
-    // Show notification
+    // Exibir notificação
     alert('Registro alimentar salvo com sucesso!');
   };
 
-  // Helper to get the meal icon
+  // ícone da refeição
   const getMealIcon = (type: MealEntry['type']) => {
     switch (type) {
       case 'breakfast': return <Coffee className="h-5 w-5" />;
@@ -45,7 +45,7 @@ const Nutrition: React.FC = () => {
     }
   };
 
-  // Helper to get the meal title
+  // Função para obter o nome da refeição
   const getMealTitle = (type: MealEntry['type']) => {
     switch (type) {
       case 'breakfast': return 'Café da Manhã';
@@ -89,7 +89,7 @@ const Nutrition: React.FC = () => {
         </div>
       </div>
       
-      {/* Nutrition tips section */}
+      {/* Dicas de alimentação */}
       <div className="mt-8">
         <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Dicas de Alimentação Saudável</h3>
         

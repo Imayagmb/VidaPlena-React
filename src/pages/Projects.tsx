@@ -4,10 +4,10 @@ import { Play, Pause, Square, PlusCircle, Clock, Trash2 } from 'lucide-react';
 interface Task {
   id: string;
   name: string;
-  estimatedTime?: string; // Made optional and changed to string to allow any format
+  estimatedTime?: string;
   startDate: string;
   completed: boolean;
-  timeSpent: number; // in seconds
+  timeSpent: number; 
 }
 
 const Projects: React.FC = () => {
@@ -24,8 +24,8 @@ const Projects: React.FC = () => {
   
   const [activeTask, setActiveTask] = useState<Task | null>(null);
   const [timerRunning, setTimerRunning] = useState(false);
-  const [timer, setTimer] = useState(0); // in seconds
-  const [totalTimeToday, setTotalTimeToday] = useState(0); // in seconds
+  const [timer, setTimer] = useState(0); 
+  const [totalTimeToday, setTotalTimeToday] = useState(0); 
   
   const timerRef = useRef<number | null>(null);
 
@@ -149,7 +149,7 @@ const Projects: React.FC = () => {
       <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200">Gerenciador de Projetos</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Timer Section */}
+        {/* Cronometro */}
         <div className="lg:col-span-1">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6">
             <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Tarefa Atual</h3>
@@ -213,7 +213,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         
-        {/* New Task Form */}
+        {/* Nova Tarefa Form */}
         <div className="lg:col-span-2">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-6">
             <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Nova Tarefa</h3>
@@ -269,7 +269,7 @@ const Projects: React.FC = () => {
             </div>
           </div>
           
-          {/* Tasks List */}
+          {/* Tarefa Lista */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6">
             <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Tarefas Pendentes</h3>
             

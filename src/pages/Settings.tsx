@@ -12,7 +12,7 @@ const Settings: React.FC<SettingsProps> = ({ darkMode, toggleTheme }) => {
       <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200">Configurações</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Notifications Settings */}
+        {/* Configurações de Notificações */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-4 md:p-6">
           <div className="flex items-center mb-4">
             <Bell className="h-5 w-5 text-blue-500 mr-2" />
@@ -61,7 +61,7 @@ const Settings: React.FC<SettingsProps> = ({ darkMode, toggleTheme }) => {
           </div>
         </div>
         
-        {/* Appearance Settings */}
+        {/* Configurações de Aparência */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-4 md:p-6">
           <div className="flex items-center mb-4">
             <Palette className="h-5 w-5 text-blue-500 mr-2" />
@@ -87,7 +87,7 @@ const Settings: React.FC<SettingsProps> = ({ darkMode, toggleTheme }) => {
               </label>
             </div>
             
-            {/* Text Size Setting */}
+            {/* Configuração do Tamanho do Texto */}
             <div>
               <h4 className="font-medium mb-2">Tamanho do Texto</h4>
               <div className="flex items-center justify-between space-x-2">
@@ -105,7 +105,7 @@ const Settings: React.FC<SettingsProps> = ({ darkMode, toggleTheme }) => {
           </div>
         </div>
         
-        {/* Account Settings */}
+        {/* Configurações da Conta*/}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-4 md:p-6">
           <h3 className="text-xl font-semibold mb-4">Conta</h3>
           
@@ -139,7 +139,7 @@ const Settings: React.FC<SettingsProps> = ({ darkMode, toggleTheme }) => {
           </div>
         </div>
         
-        {/* Data & Privacy */}
+        {/* Dados e Privacidade*/}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-4 md:p-6">
           <h3 className="text-xl font-semibold mb-4">Dados & Privacidade</h3>
           
