@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Sidebar from './components/layout/Sidebar';
-import Header from './components/layout/Header';
+import Sidebar from './components/sidebar/sidebar';
+import Header from './components/header/header';
 import Dashboard from './pages/Dashboard';
 import Goals from './pages/Goals';
 import Nutrition from './pages/Nutrition';

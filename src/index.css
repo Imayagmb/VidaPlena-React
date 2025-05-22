@@ -60,7 +60,6 @@
   }
 }
 
-/* Transitions */
 .page-transition {
   @apply transition-opacity duration-300 ease-in-out;
 }
